@@ -18,7 +18,6 @@ public class ProductDao {
     public List<Product> fetchProductDetails(String url) {
         return flipDealClient.fetchData(url, new ParameterizedTypeReference<List<Product>>() {});
     }
-
     public ExchangeRates fetchExchangeRates(String url) {
         return flipDealClient.fetchData(url, new ParameterizedTypeReference<ExchangeRates>() {});
     }
